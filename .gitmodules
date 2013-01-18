@@ -46,3 +46,6 @@
 [submodule "sot-pattern-generator"]
 	path = sot-pattern-generator
 	url = git@github.com:jrl-umi3218/sot-pattern-generator
+[submodule "soth"]
+	path = soth
+	url = git@github.com:laas/soth.git

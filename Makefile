@@ -13,6 +13,7 @@ DIR_LIST = \
 	dynamic-graph-python   \
 	sot-core   \
 	sot-dynamic   \
+	soth \
 	sot-dyninv   \
 	jrl-walkgen   \
 	sot-pattern-generator   \

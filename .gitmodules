@@ -1,0 +1,48 @@
+[submodule "abstract-robot-dynamics"]
+	path = abstract-robot-dynamics
+	url = git@github.com:laas/abstract-robot-dynamics.git
+[submodule "dynamic-graph"]
+	path = dynamic-graph
+	url = git@github.com:jrl-umi3218/dynamic-graph
+[submodule "dynamic-graph-python"]
+	path = dynamic-graph-python
+	url = git@github.com:jrl-umi3218/dynamic-graph-python
+[submodule "hrp2_10"]
+	path = hrp2_10
+	url = ssh://softs.laas.fr/git/jrl/hrp2_10
+[submodule "hrp2-10-optimized"]
+	path = hrp2-10-optimized
+	url = ssh://softs.laas.fr/git/jrl/robots/hrp2-10-optimized
+[submodule "hrp2_14"]
+	path = hrp2_14
+	url = ssh://softs.laas.fr/git/jrl/hrp2_14
+[submodule "hrp2Dynamics"]
+	path = hrp2Dynamics
+	url = ssh://softs.laas.fr/git/jrl/hrp2Dynamics
+[submodule "jrl-dynamics"]
+	path = jrl-dynamics
+	url = git@github.com:jrl-umi3218/jrl-dynamics
+[submodule "jrl-mal"]
+	path = jrl-mal
+	url = git@github.com:jrl-umi3218/jrl-mal
+[submodule "jrl-mathtools"]
+	path = jrl-mathtools
+	url = git@github.com:jrl-umi3218/jrl-mathtools
+[submodule "jrl-walkgen"]
+	path = jrl-walkgen
+	url = git@github.com:jrl-umi3218/jrl-walkgen
+[submodule "robot-viewer"]
+	path = robot-viewer
+	url = git@github.com:laas/robot-viewer.git
+[submodule "sot-core"]
+	path = sot-core
+	url = git@github.com:jrl-umi3218/sot-core
+[submodule "sot-dynamic"]
+	path = sot-dynamic
+	url = git@github.com:jrl-umi3218/sot-dynamic
+[submodule "sot-dyninv"]
+	path = sot-dyninv
+	url = git@github.com:laas/sot-dyninv.git
+[submodule "sot-pattern-generator"]
+	path = sot-pattern-generator
+	url = git@github.com:jrl-umi3218/sot-pattern-generator

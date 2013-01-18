@@ -5,10 +5,6 @@ DIR_LIST = \
 	jrl-mal   \
 	abstract-robot-dynamics   \
 	jrl-dynamics   \
-	hrp2_10   \
-	hrp2_14   \
-	hrp2-10-optimized   \
-	hrp2Dynamics   \
 	dynamic-graph   \
 	dynamic-graph-python   \
 	sot-core   \
@@ -23,10 +19,6 @@ jrl-mathtools/build: jrl-mathtools/cmake/base.cmake
 jrl-mal/build: jrl-mal/cmake/base.cmake
 abstract-robot-dynamics/build: abstract-robot-dynamics/cmake/base.cmake
 jrl-dynamics/build: jrl-dynamics/cmake/base.cmake
-hrp2_10/build: hrp2_10/cmake/base.cmake
-hrp2_14/build: hrp2_14/cmake/base.cmake
-hrp2-10-optimized/build: hrp2-10-optimized/cmake/base.cmake
-hrp2Dynamics/build: hrp2Dynamics/cmake/base.cmake
 dynamic-graph/build: dynamic-graph/cmake/base.cmake
 dynamic-graph-python/build: dynamic-graph-python/cmake/base.cmake
 sot-core/build: sot-core/cmake/base.cmake

@@ -1,4 +1,4 @@
-INSTALL_DIRECTORY = /tmp
+INSTALL_DIRECTORY = /home/student/compil
 CMAKE = cmake .. -DCMAKE_INSTALL_PREFIX=$(INSTALL_DIRECTORY) -DCMAKE_BUILD_TYPE=release
 DIR_LIST = \
 	jrl-mathtools   \
@@ -26,6 +26,7 @@ sot-dynamic/build: sot-dynamic/cmake/base.cmake
 sot-dyninv/build: sot-dyninv/cmake/base.cmake
 jrl-walkgen/build: jrl-walkgen/cmake/base.cmake
 sot-pattern-generator/build: sot-pattern-generator/cmake/base.cmake
+soth: soth/cmake/base.cmake
 
 %/build:
 	cd $(@:%/build=%); mkdir -p build

@@ -13,7 +13,8 @@ DIR_LIST = \
 	sot-dyninv   \
 	jrl-walkgen   \
 	sot-pattern-generator   \
-	robot-viewer
+	robot-viewer \
+	romeo
 
 jrl-mathtools/build: jrl-mathtools/cmake/base.cmake
 jrl-mal/build: jrl-mal/cmake/base.cmake
@@ -27,6 +28,7 @@ sot-dyninv/build: sot-dyninv/cmake/base.cmake
 jrl-walkgen/build: jrl-walkgen/cmake/base.cmake
 sot-pattern-generator/build: sotpg-branch sot-pattern-generator/cmake/base.cmake
 soth/build: soth/cmake/base.cmake
+romeo/build: romeo/cmake/base.cmake
 
 %/build:
 	cd $(@:%/build=%); mkdir -p build

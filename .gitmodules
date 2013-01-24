@@ -37,3 +37,6 @@
 [submodule "soth"]
 	path = soth
 	url = git://github.com/laas/soth.git
+[submodule "romeo"]
+	path = romeo
+	url = https://gforge.inria.fr/git/romeo-sot/romeo-sot.git/

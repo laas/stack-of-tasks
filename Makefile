@@ -25,13 +25,20 @@ sot-core/build: sot-core/cmake/base.cmake
 sot-dynamic/build: sot-dynamic/cmake/base.cmake
 sot-dyninv/build: sot-dyninv/cmake/base.cmake
 jrl-walkgen/build: jrl-walkgen/cmake/base.cmake
-sot-pattern-generator/build: sot-pattern-generator/cmake/base.cmake
-soth: soth/cmake/base.cmake
+sot-pattern-generator/build: sotpg-branch sot-pattern-generator/cmake/base.cmake
+soth/build: soth/cmake/base.cmake
 
 %/build:
 	cd $(@:%/build=%); mkdir -p build
 	cd $@; $(CMAKE)
 	cd $@; make -s install
+
+%-rebuild: %rmbuild %/build
+	echo toto
+
+.PHONY: %rmbuild
+%rmbuild:
+	rm -rf $(@:%rmbuild=%/build)
 
 %-update: %/build
 	cd $(@:%-update=%)/build; make -s install
@@ -50,8 +57,13 @@ jrl-mal/build:
 	cd $(@:%/cmake/base.cmake=%); git submodule init
 	cd $(@:%/cmake/base.cmake=%); git submodule update
 
+# ---> sot pg
+sotpg-branch:
+	cd sot-pattern-generator; git checkout -t origin/topic/python
+
 # ---> robot-viewer
 robot-viewer/build:
+	cd $(@:%/build=%); git checkout 06acab
 	cd $(@:%/build=%); python setup.py install --prefix $(INSTALL_DIRECTORY)
 
 robot-viewer-update:
